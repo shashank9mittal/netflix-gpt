@@ -32,7 +32,7 @@ const Header = () => {
       });
   }
   return (
-    <div className='w-full px-6 bg-gradient-to-b from-black  flex justify-between items-center z-50 sticky top-0'>
+    <div className='w-full px-6 bg-gradient-to-b from-black  flex justify-between items-center z-50 fixed top-0'>
       <img className='w-48 ' src={LOGO_URL} alt='Logo' />
       {user && (
         <div
