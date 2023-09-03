@@ -5,7 +5,7 @@ import appStore from "./store/appStore";
 function App() {
   return (
     <Provider store={appStore}>
-      <Body></Body>
+      <Body className='h-full'></Body>
     </Provider>
   );
 }

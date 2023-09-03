@@ -5,19 +5,16 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
+import { BG_IMG_URL } from "../utils/constants";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
   const [errMsg, setErrMsg] = useState(null);
   const email = useRef(null);
   const password = useRef(null);
-  const navigate = useNavigate();
 
-  const bgImg =
-    "https://assets.nflxext.com/ffe/siteui/vlv3/855ed6e2-d9f1-4afd-90da-96023ec747c3/58126e35-739d-409f-9920-e213b5e2d640/US-en-20230828-popsignuptwoweeks-perspective_alpha_website_large.jpg";
   const divStyle = {
-    backgroundImage: `url(${bgImg})`,
+    backgroundImage: `url(${BG_IMG_URL})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     height: "100vh",
@@ -48,8 +45,6 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log(user);
-          navigate("/browse");
         })
         .catch((error) => {
           //   const errorCode = error.code;
@@ -64,8 +59,6 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log(user);
-          navigate("/browse");
         })
         .catch((error) => {
           //   const errorCode = error.code;
