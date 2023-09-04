@@ -7,18 +7,18 @@ const GPTMovieList = () => {
   const gptList = gptMovieList?.flat();
 
   return (
-    <div className='text-white pt-12 '>
-      <div className='text-lg font-semibold py-4 text-white'>
+    <div className='text-white pt-12 m-auto '>
+      <div className='text-lg font-semibold py-4 mx-16 text-white'>
         Suggested Movies
       </div>
       {gptList?.length ? (
-        <div className='flex flex-wrap gap-4 '>
+        <div className='flex flex-wrap gap-4 justify-center '>
           {gptMovieList.flat()?.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
         </div>
       ) : (
-        <div className='flex flex-wrap gap-4 '>
+        <div className='flex flex-wrap gap-4 justify-center'>
           {movieList?.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}

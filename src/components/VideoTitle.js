@@ -6,10 +6,10 @@ const VideoTitle = ({ title, overview }) => {
         {overview}
       </div>
       <div className='flex gap-2 w-6/12'>
-        <div className='py-2 px-4 bg-white text-center w-2/12 rounded-sm text-black cursor-pointer'>
+        <div className='py-2 px-6 bg-white text-center  rounded-sm text-black cursor-pointer'>
           ▶️ Play
         </div>
-        <div className='py-2 px-4 bg-slate-400 text-center w-2/12 rounded-sm text-white bg-opacity-80 cursor-pointer'>
+        <div className='py-2 px-6 bg-slate-400 text-center  rounded-sm text-white bg-opacity-80 cursor-pointer'>
           More Info
         </div>
       </div>

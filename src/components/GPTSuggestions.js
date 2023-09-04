@@ -31,7 +31,7 @@ const GPTSuggestions = () => {
             </button>
           </div>
         </div>
-        <div className='mb-12'>
+        <div className='mb-12 mx-auto'>
           <GPTMovieList></GPTMovieList>
         </div>
       </div>
