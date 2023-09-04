@@ -16,7 +16,7 @@ const Browse = () => {
   useUpcomingMovies();
 
   return (
-    <div className=' bg-zinc-900 '>
+    <div className='h-full bg-black '>
       <Header></Header>
       {showGPTSuggestions ? (
         <GPTSuggestions />

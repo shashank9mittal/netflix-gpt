@@ -1,7 +1,7 @@
 import { IMG_CDN_URL } from "../utils/constants";
 
 const MovieCard = ({ movie }) => {
-  if (!movie) return null;
+  if (!movie || !movie?.backdrop_path) return null;
   return (
     <div className='w-72 pr-4 rounded-md relative group cursor-pointer'>
       <img
