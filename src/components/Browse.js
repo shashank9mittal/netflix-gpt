@@ -5,8 +5,11 @@ import SecondaryContainer from "./SecondatryContainer";
 import usePopularMovies from "../services/usePopularMovies";
 import useTopMovies from "../services/useTopMovies";
 import useUpcomingMovies from "../services/useUpcomingMovies";
+import { useSelector } from "react-redux";
+import GPTSuggestions from "./GPTSuggestions";
 
 const Browse = () => {
+  const showGPTSuggestions = useSelector((store) => store.gpt.showGptSearch);
   useNewMovies();
   usePopularMovies();
   useTopMovies();
@@ -15,8 +18,14 @@ const Browse = () => {
   return (
     <div className=' bg-zinc-900 '>
       <Header></Header>
-      <MainContainer />
-      <SecondaryContainer />
+      {showGPTSuggestions ? (
+        <GPTSuggestions />
+      ) : (
+        <>
+          <MainContainer />
+          <SecondaryContainer />
+        </>
+      )}
     </div>
   );
 };

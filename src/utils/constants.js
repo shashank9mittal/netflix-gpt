@@ -30,3 +30,6 @@ export const API_OPTIONS = {
 export const ACCESS_TOKEN =
   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTkxNmNiNzFkZjdjYjkxMTZiMjY5MTI3NmRiNjRjYSIsInN1YiI6IjY0ZjNmNWRmZTBjYTdmMDEwZGU1MmQ4YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.sJzd2aG_mxyOF0Eg7Agfk6Lfo3Wo-yym-wB6QnTxNmA";
 export const API_KEY = "75916cb71df7cb9116b2691276db64ca";
+
+export const OPEN_AI_KEY =
+  "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";
